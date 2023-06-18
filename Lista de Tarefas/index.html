@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de Tarefas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section class="content">
+    <section class="menu">
+        <div class="perfil">
+            <img src="imgs/Perfil Profissional.jpg" alt="Foto de perfil">
+            <h1>João da Silva</h1>
+            <p class="texto-perfil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis, temporibus eius maiores, ratione officiis delectus dignissimos sapiente a nisi praesentium tenetur distinctio dolore unde. Asperiores perferendis molestias magnam officiis.</p>
+        </div>
+        <div class="div-menu">
+            <ul class="menu-nav">
+                <li class="menu-item"><a href=”#”>Link1</a></li>
+                <li class="menu-item"><a href=”#”>Link2</a></li>
+                <li class="menu-item"><a href=”#”>Link3</a></li>
+                <li class="menu-item"><a href=”#”>Link4</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="lista-dia">
+        <h1>Lista de Tarefas do Dia</h1>
+        <form onsubmit="adicionarTarefaDia(event)">
+        <input type="text" id="tarefaDia" placeholder="Qual a tarefa?" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul class="listaDeTarefasDia" id="listaDeTarefasDia"></ul>
+    </section>
+    <section class="lista-noite">
+        <h1>Lista de Tarefas da Noite</h1>
+        <form onsubmit="adicionarTarefaNoite(event)">
+        <input type="text" id="tarefaNoite" placeholder="Qual a tarefa?" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul class="listaDeTarefasNoite" id="listaDeTarefasNoite"></ul>
+    </section>
+    </section>
+</body>
+</html>

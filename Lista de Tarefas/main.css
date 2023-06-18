@@ -1,0 +1,199 @@
+:root {
+
+    padding: 0px;
+    margin: 0px;
+    --primary-color: #111;
+    --secundary-color: #222;
+    --text-color:#fffeee;
+    --highlight-color: #70e000;
+    --cancel-color: #f21b3f;
+
+}
+
+body {
+
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+section.content {
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secundary-color);
+
+}
+
+section.menu {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+
+}
+
+section.lista-dia{
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+section.lista-noite{
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+p {
+
+    color: var(--text-color);
+    font-size: 14px;
+
+}
+
+p.texto-perfil{
+    text-align: justify;
+}
+
+h1 {
+
+    color: var(--text-color);
+    font-size: 32px;
+}
+
+div.perfil{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50px;
+}
+
+div.div-menu{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+
+}
+
+ul.menu-nav {
+
+    list-style: none;
+    padding: 0px;
+
+}
+
+li.menu-item{
+
+    margin-bottom: 45px;
+
+}
+
+a {
+    
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.6s, color 0.3;
+    
+}
+
+a:hover {
+
+    background-color: var(--secundary-color);
+    color: var(--text-color);
+
+}
+
+ul.taskList {
+
+    list-style-type: none;
+    padding: 0;
+
+}
+
+li {
+
+    margin-bottom: 5px;
+
+}
+
+.remove-button {
+
+    font-weight: 600;
+    margin-left: 30px;
+    padding: 10px 10px;
+    background-color: var(--cancel-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+
+}
+
+ul.listaDeTarefasDia {
+
+    color: var(--text-color);
+    list-style-type: none;
+    margin: 30px;
+
+}
+
+ul.listaDeTarefasNoite {
+
+    color: var(--text-color);
+    list-style-type: none;
+    margin: 30px;
+
+}
+
+input[type=text] {
+
+    max-width: 200px;
+    min-width: 100px;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-right: 5px;
+
+  }
+
+  button[type=submit] {
+
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: var(--highlight-color);
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+  }
